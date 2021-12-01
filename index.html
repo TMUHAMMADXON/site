@@ -7,7 +7,365 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>salom</h1>
-    <h2>hayr</h2>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Segoe script;
+        } body {
+            background-color: rgb(124, 162, 187);
+            background: url("komp.jpg");
+        } .header {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            padding-top: 5px;
+        } .header #one {
+            color: rgb(82, 233, 36);
+        } .test-rej {
+            width: 100%;
+            height: 20px;
+            color: red;
+            background-color: rgb(2, 2, 133,0.1);
+        }
+        .footer {
+            width: 100%;
+            height: 300px;
+            padding-top: 20px;
+        } .box {
+            width: 500px;
+            height: auto;
+            margin: 0px auto;
+            background-color: rgba(19, 15, 15, 0.8);
+            padding: 20px;
+            border-radius: 25px;
+            top: 50%;
+            left: 50%;
+            transition: .5s;
+        } input[type="text"] , [type="password"] {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+            outline: none;
+            border: none;
+            border-bottom: 3px solid rgb(65, 211, 21);
+            background-color: rgb(10, 10, 10,0.00001);
+            font-size: 20px;
+            padding: 0 25px;
+            font-family: Segoe script;
+            color: #fff;
+            border-radius: 10px;
+        } input:focus {
+            color: #fff;
+            border-bottom: 3.5px solid #fff;
+        } input:placeholder {
+            color: rgb(65, 211, 21);
+        } input[type="submit"] {
+            width: 100%;
+            height: 30px;
+            outline: none;
+            border: none;
+            font-size: 20px;
+            background-color: rgb(65, 211, 21);
+            cursor: pointer;
+            border-radius: 20px;
+        } input[type="submit"]:hover {
+            background-color: #fff;
+            color: black;
+        } .box h1 {
+            text-align: right;
+            color: rgb(65, 211, 21);
+            margin-bottom: 10px;
+            font-size: 40px;
+            font-family: segoe Script;
+        } .section {
+            width: 100%;
+            height: 350px;
+            text-align: center;
+            margin-top: 20px;
+            color: rgb(65, 211, 21);
+        } .section_1 {
+            width: 50%;
+            height: auto;
+            float: left;
+            text-align: center;
+            margin: 0px auto;
+        } .section_2 {
+            width: 50%; 
+            height: auto;
+            float: right;
+            text-align: center;
+            margin: 0px auto;
+        }
+        .section_left {
+            width: 500px;
+            height: 260px;
+            border-radius: 20px;
+            margin: 0px auto;
+            transition: 0.5s;
+        } .section_left_1 {
+            width: 50%;
+            height: 100%;
+            float: left;
+            border: 2px solid rgb(65, 211, 21);
+            border-radius: 20px;
+            padding-top: 85px;
+            background-color: rgba(19, 15, 15, 0.8);
+        } .section_left_2 {
+            width: 50%;
+            height: 50%;
+            float: right;
+            border: 2px solid rgb(65, 211, 21);
+            border-radius: 20px;
+            padding-top: 25px;
+            background-color: rgba(19, 15, 15, 0.8);
+            margin: 0px auto;
+        }
+         .section_right {
+            width: 500px;
+            height: 260px;
+            border-radius: 20px;
+            margin: 0px auto;
+            transition: 0.5s;
+        } .section_right_1 {
+            width: 33.3%;
+            height: 50%;
+            float: left;
+            border: 2px solid rgb(65, 211, 21);
+            border-radius: 20px;
+            padding-top : 30px;
+            background-color: rgba(19, 15, 15, 0.8);
+            font-size: 13px;
+        }
+        @media screen and (max-width: 500px) {
+            .box {
+                width: 300px;
+            } body {
+                background: url(tel2.jfif);
+                width: 100%;
+                height: 100vh;
+            } .header {
+                background-color: rgba(19, 15, 15, 0.8);
+            }
+            .header #one {
+                color: rgb(65, 211, 21);
+                font-size: 16px;
+            } .section {
+                width: 100%;
+                height: 700px;
+                display: block;
+            } .section_1 {
+                width: 100%;
+                height: auto;
+            } .section_2 {
+                width: 100%; 
+                height: auto;
+                margin-top: 50px;
+            }
+            .section_left {
+                width: 300px;
+                margin: 0px auto;
+                display: block;
+                transition: 0.5s;
+            } .section_right {
+                width: 300px;
+                margin: 0px auto;
+                display: block;
+                transition: 0.5s;
+            } .section_right_1 {
+                width: 50%;
+                padding-top: 35px;
+            } .section_right_1 h1 {
+                font-size: 20px;
+            }
+        } @media screen and (max-width: 1000px) {
+            .section_1 {
+                width: 100%;
+                height: auto;
+            } .section_2 {
+                width: 100%; 
+                height: auto;
+                margin-top: 50px;
+            }
+        }
+        @media screen and (max-width: 1350px) {
+            .header #one {
+                font-size: 25px;
+            }
+        }   
+        @media screen and (max-width: 1100px) {
+            .header #one {
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 860px) {
+            .header #one {
+                font-size: 15px;
+            }
+        }
+    </style>
+    <div class="header">
+        <h1 id="one">С помощью этого сайта вы можете узнать, сколько времени вы прожили !</h1>
+    </div>
+    <div class="test-rej">
+        <p><marquee style="font-family: sans-serif;">Этот сайт работает в тестовом режиме</marquee></p>
+    </div>
+    <div class="footer">
+        <div class="box">
+            <h1 id="ism">Ismoil</h1>
+            <input id="god" type="text" placeholder="Год..">
+            <input id="mes" type="text" placeholder="Месяц..">
+            <input id="den" type="text" placeholder="День..">
+            <input onclick="fun()" type="submit">
+        </div>
+    </div>
+<div class="section">
+    <div class="section_1">
+        <div class="section_left">
+                    <div class="section_left_1">
+                        <h1 id="yil1">0</h1>
+                        <p>Лет</p>
+                    </div>
+                    <div class="section_left_2">
+                        <h1 id="oy1">0</h1>
+                        <p>Месяца</p>
+                    </div>
+                    <div class="section_left_2">
+                        <h1 id="kun1">0</h1>
+                        <p>Дней</p>
+                    </div>
+        </div>
+    </div>
+    <div class="section_2">
+        <div class="section_right">
+                    <div class="section_right_1">
+                        <h1 id="yil">0</h1>
+                        <p>Лет</p>
+                    </div>
+                    <div class="section_right_1">
+                        <h1 id="oy">0</h1>
+                        <p>Месяцев</p>
+                    </div>
+                    <div class="section_right_1">
+                        <h1 id="hafta">0</h1>
+                        <p>Недели</p>
+                    </div>
+                    <div class="section_right_1">
+                        <h1 id="kun">0</h1>
+                        <p>Дней</p>
+                    </div>
+                    <div class="section_right_1">
+                        <h1 id="soat">0</h1>
+                        <p>Часы</p>
+                    </div>
+                    <div class="section_right_1">
+                        <h1 id="minut">0</h1>
+                        <p>Минуты</p>
+                    </div>
+        </div>
+    </div>
+</div>
+    
+
+
+    <script>
+        var a=prompt("Введите ваше имя :)") ;
+        var b=document.getElementById("ism").innerHTML=a ;
+
+    function fun() {
+            var tim= new Date();
+            //kun
+            var m=tim.getDate();
+            //--
+            var k=tim.getMonth();
+            //oy
+            var h=(k+1) ;
+            //yil
+            var s=tim.getFullYear(); 
+            /*---------------------------------------*/
+            //kun
+            var m1=document.getElementById("den").value ;
+            //oy
+            var h1=document.getElementById("mes").value ;
+            //yil
+            var s1=document.getElementById("god").value ;
+            /*---------------------------------------*/
+
+        if (s1<=s && h1<=12 && m1<=31) {
+
+            //yil 
+            if (s1<s) {
+                var yil=Number(s-s1) ;
+            } 
+            /*---------------------------------------*/
+            //oy 
+            if (h1<h) {
+                var oy=Number(h-h1) ;
+            } else {
+                var j=Number(h)+12 ;
+                var oy=Number(j-h) ;
+                var n=Number(yil-1) ;
+                var yil=Number(n) ;
+            }
+            /*---------------------------------------*/
+            //kun
+            if (m1<m) {
+                var kun= Number(m-m1) ;
+            } else {
+                var t = Number(m)+30 ;
+                var kun= Number(t-m1) ;
+                var oy = Number(oy-1) ;
+            }
+            /*---------------------------------------*/
+            //document.write(yil , " " , oy , " " , kun)
+            /*---------------------------------------*/
+
+
+            /*------------------------------------*/
+            var den = (kun+(30*oy)+(30*(yil*12))) ;
+            document.getElementById("kun").innerHTML=Math.floor(den) ;
+            /*------------------------------------*/
+            var ned = (den/7) ;
+            document.getElementById("hafta").innerHTML=Math.floor(ned); ;
+            /*------------------------------------*/
+            var mes = (ned/4) ;
+            document.getElementById("oy").innerHTML=Math.floor(mes) ;
+            /*------------------------------------*/
+            var chas = (den*24) ;
+            document.getElementById("soat").innerHTML=Math.floor(chas) ;
+            /*------------------------------------*/    
+            var min = (chas*60) ;
+            document.getElementById("minut").innerHTML=Math.floor(min)
+            /*------------------------------------*/
+            document.getElementById("yil").innerHTML=yil ;
+            /*------------------------------------*/
+
+
+
+            /*------------------------------------*/
+            document.getElementById("yil1").innerHTML=yil ;
+            /*------------------------------------*/
+            document.getElementById("oy1").innerHTML=oy ;
+            /*------------------------------------*/
+            document.getElementById("kun1").innerHTML=kun ;
+            /*------------------------------------*/
+
+        } else {
+
+        }
+    }
+    </script>
+</body>
+</html>
 </body>
 </html>
